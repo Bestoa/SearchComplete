@@ -40,12 +40,12 @@ let loaded_search_complete = 1
 " Key mappings
 "--------------------------------------------------
 
-noremap [search] <Nop>
-noremap [bsearch] <Nop>
-onoremap [search] /<C-r>=SearchCompleteStart('f')<CR>
-onoremap [bsearch] /<C-r>=SearchCompleteStart('b')<CR>
-nnoremap [search] :call SearchCompleteStart('f')<CR>/
-nnoremap [bsearch] :call SearchCompleteStart('b')<CR>?
+noremap / <Nop>
+noremap ? <Nop>
+onoremap / /<C-r>=SearchCompleteStart('f')<CR>
+onoremap ? /<C-r>=SearchCompleteStart('b')<CR>
+nnoremap / :call SearchCompleteStart('f')<CR>/
+nnoremap ? :call SearchCompleteStart('b')<CR>?
 
 
 "--------------------------------------------------
